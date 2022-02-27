@@ -55,8 +55,6 @@ const app = {
             song.src = `https://res.cloudinary.com/dnzluhc7k/video/upload/v1645869691/music/${indexSong}.mp3`;
             PlaySong();
         }
-
-        btnPlaySong.onclick()
     },
     CreateToDoList: function () {
         if (typeof window !== 'undefined') {
