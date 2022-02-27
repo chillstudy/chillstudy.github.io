@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="root">
+                <div class="toDoList">
+                    <div class="toDoList-control">
+                        <div class="toDoList-Time"></div>
+
+                        <div class="toDoList-CreatBox">
+                            <div class="toDoList-CreatBoxTitle">
+                                <h2> Thêm việc cần làm ngày hôm nay </h2>
+                            </div>
+                            <div class="toDoList-CreatBoxInput">
+                                <p>Tên việc : </p>
+                                <input type="text">
+                                <p>Thời gian bắt đầu : </p>
+                                <input type="time" class = "toDoList-CreatBoxInput-Inp" name="" id="start"><p>Thời gian kết thúc : </p>
+                                <input type="time" class = "toDoList-CreatBoxInput-Inp" name="" id="end">
+                                <br>
+                                <button id="toDoList-CreatBoxInput-Btn"> Tạo việc làm </button>
+                            </div>
+                        </div>
+
+                        <div class="toDoList-Music">
+                            <div class="toDoList-Music-play">
+                                <button id="toDoList-Music-play-btn"> 
+                                    Phát nhạc 
+                                    <div>
+                                        <ion-icon name="volume-high-outline"></ion-icon>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="toDoList-Music-Random">
+                                <button id="toDoList-Music-Random-btn"> 
+                                    <div><ion-icon name="shuffle"></ion-icon></div>
+                                </button>
+                            </div>
+                            <div class="toDoList-Music-control">
+                                <p>Âm lượng nhạc : </p>
+                                <input type="range" id="SongVolume" value = "10" min="1" max="100">
+                            </div>
+                            <audio id="song">
+                                <source src="">
+                            </audio>
+                        </div>
+
+                        <div class="toDoList-Note">
+                            <input type="text" id="">
+                            
+                        </div>
+                    </div>
+                    <div class="toDoList-Timeable">
+                        <div class="toDoList__header"></div>
+                        <ul class="toDoList__nav"></ul>
+                    </div>
+                </div>
+            </div>
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="/js/data.js"></script>
+        <script src="/js/script.js"></script>
+        <link rel="stylesheet" href="/css/style.css">
+    </body>
+</html>

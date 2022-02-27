@@ -1,0 +1,225 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+
+    transition: .3;
+}
+
+li {
+    list-style: none;
+}
+
+input:focus {
+    outline: none;
+}
+input {
+    border: none;
+    background-color: #ffffff00;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url('/img/3.gif');
+
+}
+
+#root {
+    width: 85vw;
+    height: 85vh;
+    padding: 25px;
+    border: 1px solid white;
+
+    background-color: rgb(38, 0, 255);
+    position: relative;
+}
+
+.toDoList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+
+    color: #ffffff;
+}
+
+.toDoList-control {
+    float: left;
+    width: 50%;
+    min-width: 500px
+}
+
+.toDoList-CreatBox {
+    width: 80%;
+    padding: 35px;
+}
+
+.toDoList-CreatBoxInput {
+    font-size: 1.1rem;
+}
+.toDoList-CreatBoxInput p {
+    margin: 10px 0;
+}
+
+.toDoList-CreatBoxInput input { 
+    width: calc(100% - 10px);
+    padding: 5px;
+    color: white;
+    border-bottom: 1px solid white;
+
+    font-size: 18px;
+}
+
+.toDoList-Music {
+    width: 400px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    background-color: rgb(65, 162, 192);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+.toDoList-Music-play button,
+.toDoList-Music-Random button , 
+#toDoList-CreatBoxInput-Btn
+{
+    display: inline-block;
+    padding: 3px 17px;
+    border: 1px solid #000000;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #000;
+    background-color: #ffffff;
+    transition: all 0.2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#toDoList-CreatBoxInput-Btn
+{
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.toDoList-Music-Random button {
+    padding: 3px;
+}
+
+.toDoList-Music-play button:hover,
+.toDoList-Music-Random button:hover , 
+#toDoList-CreatBoxInput-Btn:hover {
+    color: #000000;
+    background-color: #c5c5c5;
+}
+
+.toDoList-Music-play button div ,
+.toDoList-Music-Random button div {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#SongVolume {
+    width: 200px;
+    height: 1px;
+
+    cursor: pointer;
+}
+
+.toDoList-Timeable {
+    float: right;
+    width: 50%;
+    height: calc(85vh - 30px);
+}
+.toDoList__header {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+.toDoList__nav {
+    height: calc(85vh - 130px);
+    overflow-y: scroll;
+}
+
+.toDoList__item {
+    height: 35px;
+    border-top: 1px solid white;
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toDoList__item:last-child{
+    border-bottom: 1px solid ;
+}
+
+.toDoList__item-main {
+    width: calc(100% - 50px);
+    cursor: pointer;
+}
+.toDoList__item-checkBox {
+    width: 50px;
+    height: 100%;
+    float: right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toDoList__item-subCheckBox {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+
+.Accomplishment {
+    color: #00ff00;
+}
+.Accomplishment .toDoList__item-subCheckBox{
+    background-color: #00ff00;
+}
+
+.Studying {
+    color: #ffff00;
+}
+.Studying .toDoList__item-subCheckBox{
+    background-color: #ffff00;
+}
