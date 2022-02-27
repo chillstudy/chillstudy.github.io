@@ -1,7 +1,7 @@
 const $ = ( x ) => document.querySelector(x);
 const $$ = ( x ) => document.querySelectorAll(x);
 
-const countSong = 2
+const countSong = 3
 const toDoListHeader = $('.toDoList__header')
 const toDoListNav= $('.toDoList__nav')
 const toDoListTime = $('.toDoList-Time')
